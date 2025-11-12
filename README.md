@@ -30,7 +30,7 @@ The project followed a standard data science workflow:
 
 1.  **Data Preprocessing:**
     * Loaded the dataset using `pandas`.
-    * Handled missing values using median (for numerical) and mode (for categorical) imputation.
+    * Handled missing values using mean (for numerical) and mode (for categorical) imputation.
     * Performed feature encoding:
         * **Label Encoding (Mapping):** Used for ordinal data (`DrainageQuality`) and binary data (`Flood`, `NearbyWaterBody`).
         * **One-Hot Encoding (`get_dummies`):** Used for nominal data (`LandType`) while dropping the first column to prevent multicollinearity.
